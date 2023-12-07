@@ -1,0 +1,11 @@
+syntax = "proto3";
+//package main;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "/protobuf";
+
+message Payload {
+    google.protobuf.Timestamp last_updated = 1;
+	string source = 2;
+}
